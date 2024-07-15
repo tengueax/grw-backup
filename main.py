@@ -53,7 +53,7 @@ def get_saves_folder(game_type: str) -> Path:
 
 def main():
     parser = ArgumentParser(
-        description="GRW Save",
+        description="GRW Backup Tool",
         usage="python main.py -i <input folder> -o <output folder> -t <steam/uplay>",
     )
     parser.add_argument(
