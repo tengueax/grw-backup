@@ -112,28 +112,28 @@ def parse_args() -> Namespace:
         "--type",
         choices=list(map(str, GameType)),
         default=GameType.AUTO.value,
-        help="Game type. Defaults to 'auto'",
+        help="Game type (Defaults to '%(default)s')",
     )
     parser.add_argument(
         "-o",
         "--output",
         type=Path,
         default=Path.cwd() / "saves",
-        help="output folder path",
+        help="Output folder path (Defaults to './saves')",
     )
     parser.add_argument(
         "-i",
         "--interval",
         type=int,
         default=DEFAULT_INTERVAL,
-        help="interval in seconds",
+        help="Backup interval in seconds (Defaults to %(default)s sec.)",
     )
     parser.add_argument(
         "-f",
         "--format",
         type=str,
         default=DEFAULT_FOLDER_FORMAT,
-        help="timestamp format",
+        help="Backup folder format (Defaults to '%(default)s')",
     )
     return parser.parse_args()
 

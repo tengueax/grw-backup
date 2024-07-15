@@ -10,14 +10,14 @@ GRW Backup Tool
 
 options:
   -h, --help            show this help message and exit
-  -t {steam,uplay,auto}, --type {steam,uplay,auto}
-                        Game type. If you have a steam version of a game, use steam, uplay otherwise
+  -t {auto,steam,uplay}, --type {auto,steam,uplay}
+                        Game type (Defaults to 'auto')
   -o OUTPUT, --output OUTPUT
-                        output folder path
+                        Output folder path (Defaults to './saves')
   -i INTERVAL, --interval INTERVAL
-                        interval in seconds
+                        Backup interval in seconds (Defaults to 300 sec.)
   -f FORMAT, --format FORMAT
-                        timestamp format
+                        Backup folder format (Defaults to '%d.%m.%Y_%H-%M-%S')
 ```
 
 ## Example
